@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressView", "ProgressView\ProgressView.csproj", "{B652C6F6-FB47-4718-8AEE-FFE40C9B1E28}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Steup", "Steup\Steup.vdproj", "{A3B0D3CC-AAAA-4D86-AD94-09A0D5C5EDA2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ViewSetup", "ViewSetup\ViewSetup.vdproj", "{9C71E015-D407-4A5C-ACA0-C2E171B0CD2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B652C6F6-FB47-4718-8AEE-FFE40C9B1E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B652C6F6-FB47-4718-8AEE-FFE40C9B1E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B652C6F6-FB47-4718-8AEE-FFE40C9B1E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B652C6F6-FB47-4718-8AEE-FFE40C9B1E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B0D3CC-AAAA-4D86-AD94-09A0D5C5EDA2}.Debug|Any CPU.ActiveCfg = Debug
+		{A3B0D3CC-AAAA-4D86-AD94-09A0D5C5EDA2}.Debug|Any CPU.Build.0 = Debug
+		{A3B0D3CC-AAAA-4D86-AD94-09A0D5C5EDA2}.Release|Any CPU.ActiveCfg = Release
+		{A3B0D3CC-AAAA-4D86-AD94-09A0D5C5EDA2}.Release|Any CPU.Build.0 = Release
+		{9C71E015-D407-4A5C-ACA0-C2E171B0CD2E}.Debug|Any CPU.ActiveCfg = Debug
+		{9C71E015-D407-4A5C-ACA0-C2E171B0CD2E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5278AC0D-F3EB-44D8-AF61-6364A1276F20}
+	EndGlobalSection
+EndGlobal

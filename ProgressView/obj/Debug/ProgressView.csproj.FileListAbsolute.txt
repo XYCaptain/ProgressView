@@ -1,0 +1,17 @@
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\bin\Debug\ProgressView.exe
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\bin\Debug\ProgressView.pdb
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\MainWindow.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProjressBar.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\App.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView_MarkupCompile.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView_MarkupCompile.lref
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\MainWindow.baml
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProjressBar.baml
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.g.resources
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.Properties.Resources.resources
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.csproj.GenerateResource.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.csproj.CoreCompileInputs.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.exe
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.pdb
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Debug\ProgressView.csprojAssemblyReference.cache

@@ -1,0 +1,17 @@
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\bin\Release\ProgressView.exe
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\bin\Release\ProgressView.pdb
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\MainWindow.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProjressBar.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\App.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView_MarkupCompile.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView_MarkupCompile.lref
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\MainWindow.baml
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProjressBar.baml
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.g.resources
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.Properties.Resources.resources
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.csproj.GenerateResource.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.csproj.CoreCompileInputs.cache
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.exe
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\obj\Release\ProgressView.pdb
+C:\Users\liuxinyu\source\repos\ProgressView\ProgressView\bin\Release\ProgressView.exe.config

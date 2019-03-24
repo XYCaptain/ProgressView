@@ -1,0 +1,79 @@
+﻿<Window x:Class="ProgressView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgressView"
+        mc:Ignorable="d"
+        Title="DataView" Height="800" Width="auto">
+    <Window.Resources>
+        <Style TargetType="ProgressBar" x:Key="SimpleProgressBar">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ProgressBar}">
+                        <Grid x:Name="Root" Width="720">
+                            <Path x:Name="PART_Track" Data="M 0 0 L 0 0 Z">
+                            </Path>
+                            <Path x:Name="PART_Indicator" Opacity="0.9" Fill="#ff4ea0c9"
+                                       Data="F1 M 715.069,90.167 C 713.027,91.979 711.382,93.829 709.881,95.042 L 673.194,95.042 C 667.215,94.250 662.501,98.219 662.194,101.917 C 661.866,105.853 666.416,110.878 672.944,110.417 L 710.194,111.417 L 714.756,115.479 C 714.336,125.346 712.482,140.675 705.194,157.792 C 697.021,176.986 685.648,189.900 678.256,197.104 L 49.777,198.312 C 42.760,190.732 14.293,158.259 13.777,108.357 C 13.198,52.428 48.169,16.964 54.444,10.812 L 678.694,8.479 C 689.922,20.709 697.390,32.117 702.194,40.479 C 710.808,55.477 714.506,70.229 715.069,90.167 Z"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="-12,0,0,0">
+                            </Path>
+                            <Path  Opacity="0.2" Fill="#ff4ea0c9"
+                                       Data="F1 M 715.069,90.167 C 713.027,91.979 711.382,93.829 709.881,95.042 L 673.194,95.042 C 667.215,94.250 662.501,98.219 662.194,101.917 C 661.866,105.853 666.416,110.878 672.944,110.417 L 710.194,111.417 L 714.756,115.479 C 714.336,125.346 712.482,140.675 705.194,157.792 C 697.021,176.986 685.648,189.900 678.256,197.104 L 49.777,198.312 C 42.760,190.732 14.293,158.259 13.777,108.357 C 13.198,52.428 48.169,16.964 54.444,10.812 L 678.694,8.479 C 689.922,20.709 697.390,32.117 702.194,40.479 C 710.808,55.477 714.506,70.229 715.069,90.167 Z"
+                                      VerticalAlignment="Center" HorizontalAlignment="Left" Margin="-12,0,0,0">
+                            </Path>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Orientation" Value="Vertical">
+                                <Setter Property="LayoutTransform" TargetName="Root" >
+                                    <Setter.Value>
+                                        <RotateTransform Angle="-90" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Key="Progress" DataType="{x:Type local:MeasureData}">
+            <local:ProjressBar MaxWidth="300" Percent="{Binding Percent}" ChannelName="{Binding ChannelName}" DataName="{Binding DataName}"></local:ProjressBar>
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel>
+        <Button Visibility="Hidden" HorizontalAlignment="Center" Click="Button_Click" Height="20" Width="50" Content="Damo"></Button>
+        <ProgressBar Visibility="Hidden" x:Name="bar1" Height="25" >
+        </ProgressBar>
+        <StackPanel Orientation="Horizontal">
+            <ItemsControl ItemsSource="{Binding MeasureData1}" ItemTemplate="{StaticResource Progress}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>            
+            <!--<ContentControl Content="{Binding MeasureData1}" ContentTemplate="{StaticResource Progress}"></ContentControl>-->
+        </StackPanel>
+        <Grid Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center">Measure</TextBlock>
+            <TextBlock Grid.Row="2" HorizontalAlignment="Center">DataName
+                <TextBlock x:Name="percent"></TextBlock>
+            </TextBlock>
+            <Viewbox Grid.Row="1" MaxWidth="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Stretch="UniformToFill">
+                <Grid>
+                    <Path x:Name="BackGroudRoot"  Grid.Row="0" Opacity="0.2" Fill="#FF383838"  VerticalAlignment="Center"  HorizontalAlignment="Center"
+                          Data="F1 M 81.583,0.000 L 131.917,0.000 L 146.083,17.723 L 146.083,104.723 C 155.602,108.288 167.460,113.732 180.000,122.140 C 190.995,129.512 199.620,137.222 206.125,143.890 L 206.125,786.140 C 200.406,792.560 165.921,829.998 109.128,831.390 C 46.453,832.926 8.155,789.299 3.250,783.515 L 0.000,145.140 C 6.314,138.061 16.589,128.205 31.500,119.890 C 45.182,112.261 57.832,108.681 66.750,106.890 L 66.750,16.640 L 81.583,0.000 Z">
+                    </Path>
+                    <ProgressBar x:Name="bar" Style="{StaticResource ResourceKey=SimpleProgressBar}" Orientation="Vertical" Margin="-7,90,0,0">
+                    </ProgressBar>
+                </Grid>
+            </Viewbox>
+        </Grid>
+    </StackPanel>
+</Window>
